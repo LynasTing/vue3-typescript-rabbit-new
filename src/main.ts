@@ -1,5 +1,9 @@
 import { createApp } from 'vue'
-import './style.css'
+// normalize.css 是一个css包, 会重置不常用的样式, 抹平各浏览器之间的差异
+import 'normalize.css'
+// 导入tailwind css
+import './index.css'
+import router from '@/router/index'
 import App from './App.vue'
-
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(router).mount('#app')
