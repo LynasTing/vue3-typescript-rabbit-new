@@ -1,9 +1,8 @@
+<script setup lang="ts">
+/**
+ * name的说明了解
+ */
+</script>
 <template>
   <RouterView />
 </template>   
-<style lang="scss" scoped>
-  h1 {
-    background-color: $warnColor;
-    @include hoverShadow()
-  }
-</style> 

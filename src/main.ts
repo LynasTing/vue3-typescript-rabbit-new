@@ -3,7 +3,8 @@ import { createApp } from 'vue'
 import 'normalize.css'
 // 导入tailwind css
 import './index.css'
-import router from '@/router/index'
+import router from './router'
+import { store } from './store'
 import App from './App.vue'
 const app = createApp(App)
-app.use(router).mount('#app')
+app.use(router).use(store).mount('#app')
